@@ -5,60 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMKN 1 PANGKEP</title>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="style/SMK1pangkep.png">
   </head>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@300&family=Poppins:ital,wght@0,500;1,900&family=Roboto:wght@100&family=Source+Code+Pro:ital,wght@1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@300&family=Poppins:ital,wght@0,500;1,900&family=Roboto:wght@100&family=Source+Code+Pro:ital,wght@1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <style>
     .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
     }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .logo {
+    animation: bounce 4s infinite;
+  }
+
+  img {
+  max-width: 100%; 
+  height: auto; 
+}
   </style>
 
   <!-- CONTACT ////////////////////////// -->
 
   <body
-    class="bg-gradient-to-t from-[#4012A1] to-[#170343] font-['Ubuntu'] text-slate-50"
+    class="bg-gradient-to-t from-blue-400 to-blue-700 font-['Ubuntu'] text-slate-50"
   >
-    <div class="absolute flex md:justify-between items-center top-0 right-0 w-[100%] h-[40px] bg-black">
+    <div class="absolute flex justify-between items-center top-0 right-0 w-[100%] h-[40px] bg-blue-700 opacity-80 backdrop-blur-md">
       <div class="divide-x">
-        <a href="#" class="mx-[2px] text-[9px] p-1 md:text-base"><i class="fa fa-phone"></i> 08987654312</a>
-        <a href="#" class="mx-[2px] text-[9px] p-1 md:text-base"><i class="fa fa-envelope"></i> smk1email@email.com</a>
-        <a href="#" class="mx-[2px] text-[9px] p-1 md:text-base"><i class="fa fa-clock-o"></i> 7:00 - 15:00</a>
+        <a href="#" class="mx-[2px] text-[10px] p-1 sm:text-base"><i class="fa fa-phone"></i> 08987654312</a>
+        <a href="#" class="mx-[2px] text-[10px] p-1 sm:text-base"><i class="fa fa-envelope"></i> smk1email@email.com</a>
+        <a href="#" class="mx-[2px] text-[10px] p-1 sm:text-base"><i class="fa fa-clock-o"></i> 7:00 - 15:00</a>
       </div>
       
       <div class="">
-        <a href="#" class="md:mx-4 mx-2 text-[12px] hover:bg-[#432d73] md:text-3xl"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="md:mx-4 mx-2 text-[12px] hover:bg-[#432d73] md:text-3xl"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="md:mx-4 mx-2 text-[12px] hover:bg-[#432d73] md:text-3xl"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://www.instagram.com/smkn1pangkep/" class="md:mx-4 mx-2 text-[12px] md:text-2xl hover:bg-blue-800"><i class="fa fa-facebook"></i></a>
+        <a href="https://web.facebook.com/smkn1pangkep/?locale=id_ID&_rdc=1&_rdr" class="md:mx-4 mx-2 text-[12px] md:text-2xl hover:bg-gradient-to-t from-purple-900 to-red-700"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@SMKNegeri1Pangkep" class="md:mx-4 mx-2 text-[12px] md:text-2xl hover:text-red-500"><i class="fa fa-youtube-play"></i></a>
       </div>
   </div>
 
     <!-- LOGO //////////////////////////// -->
-    <div class="h-screen flex items-center justify-center ">
-      <div class="text-center text-white">
-        <img src="style/SMK1pangkep.png" alt="SMKN 1 Pangkep" class="mx-auto w-[60%]"/>
-        <h1 class="font-bold mt-5 text-4xl">SMK NEGERI 1 PANGKEP</h1>
-      </div>
+
+    <div class="h-screen flex items-center justify-center" style="background-image: url(style/background.png); background-size: cover; background-repeat: no-repeat;">
+     <div class="text-center text-white">
+        <img src="style/SMK1pangkep.png" alt="SMKN 1 Pangkep" class="mx-auto w-[70%] animate__animated animate__bounce logo"/>
+        <h1 class="font-bold mt-4 text-4xl text-shadow-lg" style="text-shadow: 2px 2px 2px black;">SMK NEGERI 1 PANGKEP</h1>
+     </div>
     </div>
 
     <!-- NAVBAR -->
 
-    <nav class="bg-[#170343] opacity-80 backdrop-blur-md mx-auto h-20 -mt-20 border-b-[1px]"
-      id="navbar">
-      <div class="h-[90%] z-10 flex space-x-16 justify-center items-center text-gray-50">
-        <a href="#" class="md:text-base text-sm hover:bg-[#4012A1] duration-[0.2s] p-2  rounded-md active:text-blue-300">Beranda</a>
-        <a href="#" class="md:text-base text-sm hover:bg-[#4012A1] duration-[0.2s] p-2 rounded-md active:text-blue-300">Tentang</a>
-        <a href="#" class="md:text-base text-sm hover:bg-[#4012A1] duration-[0.2s] p-2 rounded-md active:text-blue-300">Artikel</a>
+    <nav class="bg-blue-700 backdrop-blur-md mx-auto h-20 -mt-20 border-b-[1px]" id="navbar">
+      <div class="h-[90%] z-10 flex justify-between items-center text-gray-50">
+        <div class="flex items-center ml-4">
+          <img src="style/SMK1pangkep.png" alt="Logo" class="h-12 w-auto mr-2" />
+          <span class="hidden md:inline-block text-xl font-semibold">SMKN 1 PANGKEP</span>
+        </div>
+        <div class="flex items-center space-x-4 md:space-x-8 mr-4">
+          <a href="#" class="md:text-base text-sm text-red-500 bg-blue-800 hover:bg-blue-900 duration-[0.2s] p-2 rounded-lg active:text-blue-300 block">Beranda</a>
+          <a href="#" class="md:text-base text-sm bg-blue-800 hover:bg-blue-900 duration-[0.2s] p-2 rounded-lg active:text-blue-300 block">Tentang</a>
+          <a href="#" class="md:text-base text-sm bg-blue-800 hover:bg-blue-900 duration-[0.2s] p-2 rounded-lg active:text-blue-300 block">Artikel</a>
+        </div>
       </div>
     </nav>
 
@@ -67,26 +100,18 @@
 
 
     <div class="flex flex-col md:flex-row items-center mt-20">
-      <img src="style/Poster.jpeg" alt="SMK1pangkep" class="w-3/4 md:w-[40%] h-auto rounded-md mb-5 md:mb-0 md:ml-20"/>
+      <img src="style/Poster.jpeg" alt="SMK1pangkep" class="w-3/4 md:w-[30%] h-auto rounded-md mb-5 md:mb-0 md:ml-20"/>
       <div class="md:ml-10 md:mr-10 md:mx-auto">
         <h1 class="text-2xl font-bold mb-4 md:mb-0 text-center md:text-left">
           SMKN 1 Pangkep
         </h1>
         <div class="text-lg text-justify md:mx-0 mx-4">
           <p class="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            pariatur debitis voluptates? Quod nam suscipit est non animi. Et ad
-            voluptatibus quas itaque iure sequi sapiente, consectetur inventore
-            voluptate impedit neque est eum repellendus enim ullam eligendi
-            facere architecto officia!
+            SMK Negeri 1 Pangkep, yang terletak di [Pangkep], merupakan sekolah menengah kejuruan terkemuka yang berkomitmen untuk memberikan pendidikan berkualitas kepada siswanya. Didirikan dengan tekad untuk mencapai keunggulan akademis dan pengembangan keterampilan, sekolah ini memainkan peran penting dalam membentuk masa depan siswanya.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            pariatur debitis voluptates? Quod nam suscipit est non animi. Et ad
-            voluptatibus quas itaque iure sequi sapiente, consectetur inventore
-            voluptate impedit neque est eum repellendus enim ullam eligendi
-            facere architecto officia!
+            SMK NEGERI 1 PANGKEP berdiri sebagai lembaga pendidikan yang berdedikasi untuk membentuk individu yang berpengetahuan dan memiliki keterampilan yang diperlukan untuk masa depan mereka. Dengan fokus pada pendidikan kejuruan dan komitmen pada keunggulan, sekolah ini memainkan peran vital dalam lanskap pendidikan Pangkep.
           </p>
         </div>
       </div>
@@ -100,61 +125,47 @@
     </div>
 
     <div class="flex flex-wrap items-center justify-center">
-      <div class="w-[20%] mt-10 mx-3">
-        <a href="#">
-          <img src="style/RPL.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Rekayasa Perangkat Lunak
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/TKJ.png" alt="" class="w-[70%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Teknik Komputer Jaringan</h1>
+        </div>
       </div>
-      <div class="w-[20%] mt-10 mx-10">
-        <a href="#">
-          <img src="style/TKJ.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Teknik Jaringan Komputer
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/DKV.png" alt="" class="w-[70%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Desain Komunikasi Visual</h1>
+        </div>
       </div>
-      <div class="w-[20%] mt-10 mx-3">
-        <a href="#">
-          <img src="style/DKV.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Desain Komunikasi Visual
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/RPL.png" alt="" class="w-[70%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Rekaya Perangkat Lunak</h1>
+        </div>
       </div>
-      <div class="w-[20%] mt-10 mx-3">
-        <a href="#">
-          <img src="style/MPLB.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Manajemen Perkantoran Dan Bisnis
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/MPLB.png" alt="" class="w-[80%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Manajemen Perkantoran & Layanan Bisnis</h1>
+        </div>
       </div>
-      <div class="w-[20%] mt-10 mx-3">
-        <a href="#">
-          <img src="style/pemasaran-removebg-preview.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Bisnis Daring dan Pemasaran
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/AKL.png" alt="" class="w-[70%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Akuntansi Dan Keuangan Lembaga</h1>
+        </div>
       </div>
-      <div class="w-[20%] mt-10 mx-3">
-        <a href="#">
-          <img src="style/MPLB.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Agrikultur Pengolahan Hasil Pertanian
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/aphp.png" alt="" class="w-[70%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Agribisnis Pengolahan Hasil Pertanian</h1>
+        </div>
       </div>
-      <div class="w-[20%] mt-10 mx-3">
-        <a href="#">
-          <img src="style/MPLB.png" alt="" class="w-[100%] h-auto" />
-        </a>
-        <h1 class="pt-4 text-center font-medium ">
-          Akuntansi Dan Keuangan Lembaga
-        </h1>
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-10 px-2">
+        <div class="text-center">
+          <img src="style/pemasaran.png" alt="" class="w-[70%] h-auto mx-auto mb-4" />
+          <h1 class="text-lg font-medium">Bisnis Daring Dan Pemasaran</h1>
+        </div>
       </div>
     </div>
 
@@ -162,64 +173,51 @@
 
 
     <div class="sm:mt-[10%] mt-[30%] ml-2 flex justify-center">
-      <h1 class="font-bold text-4xl">Artikel Teratas</h1>
+      <h1 class="artikel font-bold text-4xl">Artikel Teratas</h1>
     </div>
+    
     <div class="h-screen w-[80%] flex m-auto md:shadow-none shadow-2xl mb-10 md:w-auto overflow-auto">
-      <div class="md:flex flex-row items-center h-[100%] ">
-        <div
-          class="bg-gradient-to-t from-[#750ADF] to-[#2F0B54] w-[90%] h-[100%] md:w-[31%] md:h-[75%] md:mt-2 mt-3 mx-auto rounded-xl hover:shadow-2xl overflow-visible"
-        >
-          <img src="style/bg.png" alt="" class="w-[100%] h-[48%]" />
+      <div class="md:flex flex-row items-center h-[100%]">
+        <div class="bg-[#2c76d1] w-full md:w-[31%] md:h-[75%] md:mt-2 mt-3 mx-auto rounded-xl hover:shadow-2xl overflow-visible">
+          <img src="style/Kunjungan2.jpeg" alt="" class=" duration-1000 w-full h-[48%] object-cover" />
           <h1 class="font-bold text-xl mt-2 mx-2">
-            Kedatangan Lorem ipsum dolor sit. di Lorem ipsum dolor sit amet.
+            Kunjungan Industri Jurusan Rekayasa Perangkat Lunak (RPL) ke Tiga Perusahaan
           </h1>
           <p class="text-justify mt-2 mx-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            aliquam maiores quae quos, sed tempora incidunt, exercitationem
-            ratione laudantium quas alias ad cupiditate qui! Voluptatem mollitia
-            laborum omnis, dicta fugit sit dolores laboriosam recusandae. Optio
-            harum sed dolorum maiores quidem?
+            Pada tanggal 14 November 2023, siswa-siswa jurusan Rekayasa Perangkat Lunak (RPL) dari SMK Negeri 1 Pangkep menjalani kunjungan industri yang sangat bermanfaat ke tiga perusahaan terkemuka di bidang teknologi.
           </p>
         </div>
-        <div
-          class="bg-gradient-to-t from-[#750ADF] to-[#2F0B54] w-[90%] h-[100%] md:w-[31%] md:h-[75%] md:mt-2 mt-3 mx-auto rounded-xl hover:shadow-2xl"
-        >
-          <img src="style/bg.png" alt="" class="w-[100%] h-[48%]" />
+        <div class="bg-[#2c76d1] w-full md:w-[31%] md:h-[75%] md:mt-2 mt-3 mx-auto rounded-xl hover:shadow-2xl overflow-visible">
+          <img src="style/SumpahPemuda.JPG" alt="" class="w-full h-[48%] object-cover" />
           <h1 class="font-bold text-xl mt-2 mx-2">
-            Harga Lorem, ipsum. Menurun 100 Rupiah, Para Murid Lorem, ipsum.
+            Lomba Peringatan Hari Sumpah Pemuda dan Bulan Bahasa: Merayakan Kebanggaan dan Kreativitas     
           </h1>
           <p class="text-justify mt-2 mx-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            aliquam maiores quae quos, sed tempora incidunt, exercitationem
-            ratione laudantium quas alias ad cupiditate qui! Voluptatem mollitia
-            laborum omnis, dicta fugit sit dolores laboriosam recusandae. Optio
-            harum sed dolorum maiores quidem?
+            Setiap tahun, Indonesia merayakan momen bersejarah dengan mengenang Sumpah Pemuda pada tanggal 28 Oktober dan merayakan Bulan Bahasa selama bulan Oktober. Kedua peristiwa ini memiliki makna yang mendalam dalam sejarah dan budaya Indonesia.
           </p>
         </div>
-        <div
-          class="bg-gradient-to-t from-[#750ADF] to-[#2F0B54] w-[90%] h-[100%] md:w-[31%] md:h-[75%] md:mt-2 mt-3 mx-auto rounded-xl hover:shadow-2xl"
-        >
-          <img src="style/bg.png" alt="" class="w-[100%] h-[48%]" />
+        <div class="bg-[#2c76d1] w-full md:w-[31%] md:h-[75%] md:mt-2 mt-3 mx-auto rounded-xl hover:shadow-2xl overflow-visible">
+          <img src="style/PORSENI.jpeg" alt="" class="w-full  object-cover" />
           <h1 class="font-bold text-xl mt-2 mx-2">
-            Pohon Ditebang 80cm, Siswa: Panas Lorem, ipsum pak
+            Pawai Meriah dalam Porseni SMKN 1 Pangkep: Memperingati Hari Porseni dengan Semangat Kreativitas dan Kolaborasi
           </h1>
           <p class="text-justify mt-2 mx-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            aliquam maiores quae quos, sed tempora incidunt, exercitationem
-            ratione laudantium quas alias ad cupiditate qui! Voluptatem mollitia
-            laborum omnis, dicta fugit sit dolores laboriosam recusandae. Optio
-            harum sed dolorum maiores quidem?
+            Suasana ceria dan semarak menyelimuti SMKN 1 Pangkep pada Hari Porseni yang diadakan pada tanggal 15 Desember 2023. Acara yang dinanti-nantikan ini menjadi panggung bagi siswa dan siswi untuk mengekspresikan bakat dan kreativitas mereka melalui berbagai kegiatan, salah satunya adalah Pawai yang menghiasi jalan-jalan Pangkep.
           </p>
         </div>
       </div>
     </div>
 
     <!-- FOOTER//////////////////// -->
+
     <footer
-      class="relative bottom-0 right-0 left-0 flex h-20 items-center justify-center text-center bg-[#170529]"
+      class="relative bottom-0 right-0 left-0 flex h-20 items-center justify-center text-center bg-blue-500"
     >
       <h2 class="font-thin">Copyright By Lorem, ipsum dolor.</h2>
     </footer>
+
+
+
 
     <script>
       window.onscroll = function () {
